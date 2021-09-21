@@ -1,0 +1,444 @@
+:root {
+  --main-color: #212121;
+  --second-color: #757575;
+  --link-color: #2196f3;
+  --white-color: #ffffff;
+  --background-color: #e5e5e5;
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+}
+
+/* общие селекторы */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+/* Дал заголовкам, абзацам и спискам нулевые отступы */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* шапка сайта */
+.header {
+  background-color: var(--white-color);
+}
+
+/* логотип в шапке */
+.logo-header {
+  display: block;
+  margin: 25px 93px 25px 0;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.studio-logo {
+  color: var(--main-color);
+}
+
+/* Контейнер для вместимости шапки шапки */
+.page-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+/* список в шапке */
+.header-list {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+/* пункты списка в шапке */
+.header-list .header-point + .header-point {
+  margin-left: 50px;
+}
+
+/* кнопки списка в шапке */
+.header-links {
+  display: flex;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.header-links:hover {
+  color: var(--link-color);
+}
+
+/* список почты и телефона */
+.telemail-list {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+
+  list-style-type: none;
+}
+
+.telemail-list .telemail-point + .telemail-point {
+  margin-left: 50px;
+}
+
+/* кнопки почты и телефона */
+.header-info {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.header-info:hover {
+  color: var(--link-color);
+}
+
+/* как заказать услугу */
+.decisions {
+  text-align: center;
+  padding: 200px 298px 200px 298px;
+
+  background-color: var(--first-background-color);
+}
+
+/* текст */
+.decision-text {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* кнопка заказа */
+.button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  background-color: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* список особенностей */
+.features-list {
+  display: flex;
+  margin: 94px 0;
+  justify-content: center;
+
+  list-style-type: none;
+}
+
+/* пункты особенностей */
+.features-point:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* заголовки особенностей */
+.name-features {
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* текст особенностей */
+.text-features {
+  font-weight: normal;
+  line-height: 1.7;
+  color: var(--second-color);
+}
+
+/* секция наших занятий */
+.our-actions {
+  text-align: center;
+}
+
+/* чем мы занимаемся */
+.action-text {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+/* список фото того, чем мы занимаемся */
+.our-actions-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+
+  list-style-type: none;
+}
+
+/* элементы списка фото того, чем мы занимаемся */
+.our-actions-point:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* секция команды */
+.team-section {
+  margin-bottom: 94px;
+
+  background-color: var(--second-background-color);
+}
+/* наша команда */
+.our-team {
+  padding: 94px 469px 50px 469px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* список нашей команды */
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+/* пункты списка нашей команды */
+.our-team-point {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-point:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* контейнер с именами и профессиями сотрудников */
+.prof-name-container {
+  margin: 30px 60px;
+}
+
+/* имена сотрудников */
+.specialists-name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* профессии сотрудников */
+.specialists-profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--second-color);
+}
+
+/* подвал сайта */
+.footer {
+  background-color: var(--first-background-color);
+}
+
+/* контейнер элементов подвала */
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* логотип в подвале */
+.logo-footer {
+  margin: 60px auto 20px 0;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+  text-decoration: none;
+}
+.logo-studio-footer {
+  color: var(--white-color);
+}
+
+/* список адресов */
+.address-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 60px 0;
+
+  list-style-type: none;
+}
+
+/* элементы списка адресов */
+.address-point:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+/* локальный адресс */
+.local-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.local-address:hover {
+  color: var(--link-color);
+}
+
+/* e-mail и телефон */
+.emailtel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.emailtel:hover {
+  color: var(--link-color);
+}
+
+/* PORTFOLIO PAGE */
+
+/* список кнопок для выбора типа проекта */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  list-style-type: none;
+}
+
+/* элементы списка кнопок для выбора типа проекта */
+.button-point:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* кнопки для выбора типа проекта */
+.project-type-button {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--second-background-color);
+}
+
+.project-type-button:hover {
+  color: var(--white-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* список проекта */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-bottom: 94px;
+
+  list-style-type: none;
+}
+
+.project-point {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+
+  border: 1px solid #eeeeee;
+}
+
+/* фото проектов */
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* контейнер для стилизации и позиционирования заголовков и типов проектов */
+.project-baggage {
+  margin: 20px 24px;
+}
+
+/* заголовки проектов */
+.project-topic {
+  margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* тип проекта */
+.project-type {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--second-color);
+}
