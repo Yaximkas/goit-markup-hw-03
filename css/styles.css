@@ -144,7 +144,7 @@ ul {
 /* как заказать услугу */
 .decisions {
   text-align: center;
-  padding: 200px 283px 200px 283px;
+  padding: 200px 0;
 
   background-color: var(--first-background-color);
 }
@@ -438,12 +438,15 @@ ul {
 
 /* контейнер для стилизации и позиционирования заголовков и типов проектов */
 .project-baggage {
-  margin: 20px 24px;
+  /* margin: 20px 24px; */
 }
 
 /* заголовки проектов */
 .project-topic {
   margin-bottom: 4px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-weight: bold;
   font-size: 18px;
@@ -453,6 +456,10 @@ ul {
 
 /* тип проекта */
 .project-type {
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
